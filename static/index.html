@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voice Notes → Action Items</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<main class="container">
+
+<section class="hero">
+<span class="badge">AI Productivity Tool</span>
+
+<h1>
+Voice Notes <span>→</span> Action Items
+</h1>
+
+<p>
+Turn a rambling voice note into a clean transcript,
+summary and actionable task list.
+</p>
+</section>
+
+
+<section class="card">
+
+<div class="controls">
+
+<button id="recordBtn" class="primary">
+🎙️ Start recording
+</button>
+
+<label class="upload">
+📁 Upload audio
+<input
+id="fileInput"
+type="file"
+accept="audio/*">
+</label>
+
+</div>
+
+<div id="status" class="status">
+Ready
+</div>
+
+<audio
+id="player"
+controls
+hidden>
+</audio>
+
+<button
+id="processBtn"
+class="process"
+disabled>
+✨ Process voice note
+</button>
+
+</section>
+
+
+<section
+id="results"
+class="results"
+hidden>
+
+<div class="card">
+
+<h2>Transcript</h2>
+
+<p id="transcript"></p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Summary</h2>
+
+<p id="summary"></p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Key points</h2>
+
+<ul id="keyPoints"></ul>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Action items</h2>
+
+<div id="tasks"></div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
