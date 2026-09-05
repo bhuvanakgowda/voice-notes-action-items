@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    background: #f6f7fb;
+    color: #171923;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 48px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: #e9e7ff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 60px);
+    margin: 16px 0 10px;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    opacity: 0.5;
+}
+
+.hero p {
+    color: #667085;
+    font-size: 18px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e6e8ef;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 28px rgba(20, 20, 40, 0.05);
+    margin-bottom: 18px;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary,
+.upload,
+.process {
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary {
+    background: #171923;
+    color: white;
+}
+
+.upload {
+    background: #eef0f5;
+}
+
+.upload input {
+    display: none;
+}
+
+.process {
+    width: 100%;
+    margin-top: 18px;
+    background: #5b4bdb;
+    color: white;
+}
+
+.process:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.status {
+    margin-top: 15px;
+    color: #667085;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.grid .card {
+    margin: 0;
+}
+
+.results h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.task {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 10px 0;
+}
+
+.task strong {
+    display: block;
+}
+
+.meta {
+    font-size: 13px;
+    color: #667085;
+    margin-top: 5px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 28px 14px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+}
